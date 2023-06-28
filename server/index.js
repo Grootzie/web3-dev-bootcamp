@@ -12,6 +12,12 @@ const balances = {
   "0x3": 75,
 };
 
+const private_keys = {
+  "Ox1": 0x10,
+  "0x2": 0x20,
+  "0x3": 0x30,
+}
+
 app.get("/balance/:address", (req, res) => {
   const { address } = req.params;
   const balance = balances[address] || 0;
