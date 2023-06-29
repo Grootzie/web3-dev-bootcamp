@@ -7,16 +7,16 @@ app.use(cors());
 app.use(express.json());
 
 const balances = {
-  "0x1": 100,
-  "0x2": 50,
-  "0x3": 75,
+  "ff1fa4f3b034a1e9a9487200ea0adde8da7f34f2": 100,
+  "69bc0482f9da2ea85a5ef423bb1074ad0b9d2909": 50,
+  "5f4af66038bf1b6c1d2c2aed7ef1af5720464795": 75,
 };
 
 const private_keys = {
   "Ox1": 0x10,
   "0x2": 0x20,
   "0x3": 0x30,
-}
+};
 
 app.get("/balance/:address", (req, res) => {
   const { address } = req.params;
